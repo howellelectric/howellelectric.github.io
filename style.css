@@ -86,22 +86,30 @@ h1 {
   text-align: center;
 }
 
-.column {
+/*.column {
   padding-top: 25px;
   padding-bottom: 25px;
-}
+}*/
 
-.column * {
+.column > * {
   margin-left: 25px;
   margin-right: 25px;
 }
 
-.column:first-child * {
+.column:first-child > * {
   margin-left: 50px;
 }
 
-.column:last-child * {
+.column:last-child > * {
   margin-right: 50px;
+}
+
+.row:first-child {
+	padding-top: 25px;
+}
+
+.row:last-child {
+	padding-bottom: 25px;
 }
 
 
@@ -114,4 +122,13 @@ h1 {
   display: block;
   width: 33%;
   float: left;
+}
+
+
+
+
+
+/* Styles */
+.italic {
+	font-style: italic;
 }
