@@ -29,6 +29,7 @@ h1 {
 #header .logo {
   width: 165px;
   float: left;
+	border: 0;
 }
 
 #header nav {
