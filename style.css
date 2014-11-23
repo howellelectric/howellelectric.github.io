@@ -29,6 +29,7 @@ h1 {
 #header .logo {
   width: 165px;
   float: left;
+	border: 0;
 }
 
 #header nav {
@@ -44,9 +45,17 @@ h1 {
   padding: 0 10px 5px 10px;
 }
 
+#header nav li a {
+	text-decoration: none;
+	color: black;
+}
+
+#header nav li.active a {
+	color: red;
+}
+
 #header nav li.active {
   border-bottom: solid red 4px;
-  color: red;
 }
 
 .jumbotron {
@@ -86,22 +95,30 @@ h1 {
   text-align: center;
 }
 
-.column {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
+/*.column {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}*/
 
-.column * {
+.column > * {
   margin-left: 25px;
   margin-right: 25px;
 }
 
-.column:first-child * {
+.column:first-child > * {
   margin-left: 50px;
 }
 
-.column:last-child * {
+.column:last-child > * {
   margin-right: 50px;
+}
+
+.row:first-child {
+	padding-top: 25px;
+}
+
+.row:last-child {
+	padding-bottom: 25px;
 }
 
 
@@ -114,4 +131,44 @@ h1 {
   display: block;
   width: 33%;
   float: left;
+}
+
+.c5 {
+	display: block;
+	width: 180%;
+	clear:both;
+}	
+
+
+/* Styles */
+.italic {
+	font-style: italic;
+}
+
+/*Tables*/
+.table.contactList{
+	border:3 px outset rgba(0,0,0,0.8);
+	border-collapse: collapse;
+	font-family: Arial, Helvetica, sans-serif;
+	width:80%;
+}
+
+.table.contactList caption{
+	caption-siide:bottom;
+	text align:right;
+}
+
+.table.contactList th, table.contactList td{
+	border:1 px solid gray;
+	border-collapse: collapse;
+}
+
+.table.contactList col.firstCol{
+background-color:rgba(225, 225, 198, 0.8);
+}
+
+#map-canvas{
+	height:100%;
+	margin:0;
+	padding: 0;
 }

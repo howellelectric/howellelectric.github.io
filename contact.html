@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- x
-	
-		-->
-		<meta charset="UTF-8">
-		<script src="modernizr.js></script>
-		<script src="http://code.jquery.com/jquery-1.10.2.min.js></script>
-		<title>Contact Us</title>
-		<link rel="stylesheet" href="style.css" />
+	<title>Contact Us</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="*enter"/>
+	<meta name="description" content="*enter"/>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+	<!--<meta http-equiv="refresh" content="60" />-->
+	<script src="modernizr.js></script>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script type"text/javascript">
+		var map;
+		function initialize(){
+		var mapOptions={
+		center: new google.maps.LatLng(50.661926,-120.366530),
+		zoom 8
+		};
+		
+		map = new google.maps.Map(document.getElemebtByID('map-canvas'), mapOptions);
+		}
+				
+		google.maps.event.addDomListener(window,'load',initialize);
+	</script>
+			
+    <link rel="stylesheet" href="style.css" />
+  </head>
 	</head>
 	
 	<body>
@@ -18,37 +35,77 @@
 
         <nav>
           <ul>
-            <li class="active">Home</li>
-            <li><a href ="services.htm">Our Services</a></li>
-            <li><a href ="contact.htm">Contact Us</a></li>
-            <li><a href ="historical.htm">*Previous Work</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html#services" title="*Enter tool tip">Our Services</a></li>
+			<li class="active"><a href="contact.html" title="*Enter tool tip">Contact Us</a></li>
+			<li><a href="pastwork.html" title="*Enter tool tip" rel="archives">*Past Work</a></li>
           </ul>
         </nav><br class="clear-fix" />
       </div>
 	  
 		<div class="jumbotron">
-        <p>Box 3305 Kamloops, BC, v2c-5p5</p>
-		<p>Kamloops Office - 984 Laval Crescent, Kamloops, BC, V2C5P5</p>
-		<p>Kelowna Office - #23-2670 Enterprise, Kelowna, BC, V1X7J6</p>
-		<p>Gordon Howell - Estimator - gordonhowell@howellelectric.ca - (250)374-5771 ext 202</p>
-		<p>Brent Howell - Estimator/Project Manager - brent@howellelectric.ca (250)374-5771 ext 216</p>
-		<p>Jim Nikkel - Project Manager - jimnikkel @howellelectric.ca - (250)374-5771 ext 214</p>
-		<p>Nathan Watkins - Project Manager (Kelowna) - nathan@howellelectric.ca - (250) 860-7511</p>
-		<p>Courtney Bolger - Project Manager - courtney@howellelectric.ca - (250)374-5771 ext 221</p>
-		<p>Josey Holland - Purchasing - josey@howellelectric.ca - (250)374-5771 ext 207</p>
-		<p>Vi-Ann Nowoczin - Accounts Payable/Accounts Receivable - info@howellelectric.ca - (250)374-5771 ext 200</p>
-	  
-	  </div>
-		<section>
-			<article>
-			</article>
-		</section>
+ 
+		</div>
 		
-		<aside>
-		</aside>
+	  <div id=main-body">
+		<div class="row">
+		<div class="column c5">
+		  <table class="contactList" border="1" cellspacing="2" cellpadding="3">
+			<summary="This table contains the contact the contact information for the Howell Electric staff." />
+			<caption><h6>Box 3305 Kamloops, BC, v2c-5p5</h6>
+			<h6>Kamloops Office - 984 Laval Crescent, Kamloops, BC, V2C5P5</h6>
+			<h6>Kelowna Office - #23-2670 Enterprise, Kelowna, BC, V1X7J6</h6></caption>
+				<tbody valign="top">
+				<tr><th colspan="4">Contact</th></tr>
+				<tr>
+					<th>Name</th>
+					<th>Position</th>
+					<th>E-Mail</th>
+					<th>Phone #</th>
+				</tr>
+				<tr><th>Gordon Howell</th><td>Estimator</td><td><a href="mailto:gordonhowell@howellelectric.ca?subject=Howell%20Estimator%20Inquiry">gordonhowell@howellelectric.ca</a></td><td><a href="tel:2503745771p202">(250)374-5771 ext 202</a></td></tr>
+				<tr><th>Brent Howell</th><td>Estimator/Project Manager</td><td><a href="mailto:brent@howellelectric.ca?subject=Howell%20Electric%20Inquiry">brent@howellelectric.ca</a></td><td><a href="tel:2503745771p216">(250)374-5771 ext 216</a></td></tr>
+				<tr><th>Jim Nikkel</th><td>Project Manager</td><td><a href="mailto:jimnikkel@howellelectric.ca?subject=Howell%20Electric%20Inquiry">jimnikkel@howellelectric.ca</a></td><td><a href="tel:2503745771p214">(250)374-5771 ext 214</a></td></tr>	
+				<tr><th>Nathan Watkins</th><td>Project Manager (Kelowna)</td><td><a href="mailto:nathan@howellelectric.ca?subject=Howell%20Electric%20Inquiry%20Kelowna">nathan@howellelectric.ca</a></td><td><a href="tel2508607511">(250) 860-7511</a></td></tr>
+				<tr><th>Courtney Bolger</th><td>Project Manager</td><td><a href="courtney@howellelectric.ca?subject=Howell%20Electric%20Inquiry">courtney@howellelectric.ca</a></td><td><a href="tel:=2503745771p221">(250)374-5771 ext 221</a></td>
+				<tr><th>Josey Holland</th><td>Purchasing</td><td><a href="josey@howellelectric.ca?subject=Howell%20Purchasing%20Inquiry">josey@howellelectric.ca</a></td><td><a href="tel:2503745771p207">(250)374-5771 ext 207</a></td></tr>
+				<tr><th>Vi-Ann Nowoczin</th><td>Accounts Payable/Accounts Receivable</td><td><a href="info@howellelectric.ca?subject=Accounts%20Inquiry">info@howellelectric.ca</a></td><td><a href="tel:2503745771p200">(250)374-5771 ext 200</a><td></tr>
+				</tbody>
+		  </table>
+		  </div>
+		 </div>
+		</div>
+	   
+		<div id="footer">
 		
-		<footer>
-		</footer>
+			<div class="column c3">
+			  <h1>Contact Us</h1>
+			  <address>
+				Howell Electric<br />
+				984 Laval Crescent<br />
+				Kamloops, BC<br />
+				V2C 5P5 <br />
+				Tel: 250-374-5771<br />
+				Fax: 250-374-4579
+			  </address>
+			</div>
+			
+			<div class="column c3">
+			  <h1>Find Us</h1>
+				<div id="map-canvas"></div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d632.2814150215909!2d-120.36652999999998!3d50.661926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537e2c66904ab7d3%3A0x58ab2f1dd74ed1a!2sHowell+Electric+(1984)+Ltd!5e0!3m2!1sen!2sus!4v1416736014883" width="325" height="300" frameborder="0" style="border:0"></iframe>
+			</div>
+
+			<div class="column c3">
+			  <h1>Past Work</h1>
+			  <!-- TODO: Display images of past work here -->
+			</div><br class="clear-fix" />
+
+			<div id="copyright">
+			  <p>Copyright 2012 © Howell Electric Ltd</p>
+
+			</div>
+		</div>
 		
 	</body>
 </html>

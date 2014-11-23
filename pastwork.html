@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+		<head>
+	<title>*Past Work</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="*enter"/>
+	<meta name="description" content="*enter"/>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+	<!--<meta http-equiv="refresh" content="60" />-->
+	<script src="modernizr.js></script>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script type"text/javascript">
+		var map;
+		function initialize(){
+		var mapOptions={
+		center: new google.maps.LatLng(50.661926,-120.366530),
+		zoom 8
+		};
+		
+		map = new google.maps.Map(document.getElemebtByID('map-canvas'), mapOptions);
+		}
+				
+		google.maps.event.addDomListener(window,'load',initialize);
+	</script>
+			
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+	<body> 
+	<div id="container">
+      <div id="header">
+        <img class="logo" src="images/header-logo.png" alt="Howell Electric Logo" />
+
+        <nav>
+          <ul>
+            <li><a href="index.html" title="*Enter tool tip">Home</a></li>
+            <li><a href ="index.html#services">Our Services</a></li>
+            <li><a href ="contact.html">Contact Us</a></li>
+            <li class="active"><a href ="pastwork.html" title="*Enter tool tip" rel="archives">*Past Work</a></li>
+          </ul>
+        </nav><br class="clear-fix" />
+      </div>
+
+	</body>
+</html>
+		
