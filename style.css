@@ -146,24 +146,24 @@ h1 {
 }
 
 /*Tables*/
-.table.contactList{
+table.contactList{
 	border:3 px outset rgba(0,0,0,0.8);
 	border-collapse: collapse;
 	font-family: Arial, Helvetica, sans-serif;
 	width:80%;
 }
 
-.table.contactList caption{
+table.contactList caption{
 	caption-siide:bottom;
 	text align:right;
 }
 
-.table.contactList th, table.contactList td{
+table.contactList th, table.contactList td{
 	border:1 px solid gray;
 	border-collapse: collapse;
 }
 
-.table.contactList col.firstCol{
+table.contactList col.firstCol{
 background-color:rgba(225, 225, 198, 0.8);
 }
 
