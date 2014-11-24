@@ -95,10 +95,9 @@ h1 {
   text-align: center;
 }
 
-/*.column {
-  padding-top: 25px;
-  padding-bottom: 25px;
-}*/
+.column img {
+	max-width: 80%;
+}
 
 .column > * {
   margin-left: 25px;
@@ -133,11 +132,14 @@ h1 {
   float: left;
 }
 
-.c5 {
+.c2 {
 	display: block;
-	width: 180%;
-	clear:both;
-}	
+	width: 50%;
+	float:left;
+}
+
+
+
 
 
 /* Styles */
