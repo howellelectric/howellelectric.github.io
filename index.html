@@ -2,17 +2,201 @@
 <html>
 	<head>
 		<title>Howell Electric</title>
+		<!-- 2.3.1 i) Implement meta data
+			charset, author, content, etc -->
 		<meta charset="UTF-8"/>
+		<meta name="description" content="We are a class ‘A’ Electrical contractor, servicing the interior of British Columbia since 1984. With over 70 Employees and offices in Kamloops and Kelowna, we bring a high end and competitive edge to the construction market.">
+		<meta name="keywords" content="Electrical, Kamloops, Industrial, Residential, Service">
+		<meta name="author" content="Howell Electric">
 
-		<link rel="stylesheet" href="style.css" />
+		<!-- 2.3.2 b) Home page embedded styles -->
+		<style>
+br.clear-fix {
+  clear: both;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  background: url('images/background.jpg') no-repeat center top fixed;
+  background-size: cover;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+#header {
+  background-color: #ffffff;
+  padding: 20px 50px 20px 50px;
+}
+
+#header .logo {
+  width: 165px;
+  float: left;
+	border: 0;
+}
+
+#header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+#header nav li {
+  list-style: none;
+  float: left;
+  margin-left: 40px;
+  font-size: 22px;
+  padding: 0 10px 5px 10px;
+}
+
+#header nav li a {
+	text-decoration: none;
+	color: black;
+}
+
+#header nav li.active a {
+	color: red;
+}
+
+#header nav li.active {
+  border-bottom: solid red 4px;
+}
+
+.jumbotron {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  line-height: 60px;
+  width: 90%;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#main-body {
+  background-color: #ffffff;
+}
+
+#main-body h1 {
+  color: red;
+}
+
+#main-body {
+  font-size: 20px;
+}
+
+#footer {
+  color: white;
+}
+
+#copyright {
+  background-color: white;
+  color: black;
+  padding: 4px;
+  margin-top: 25px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.column img {
+	max-width: 80%;
+}
+
+.column > * {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.column:first-child > * {
+  margin-left: 50px;
+}
+
+.column:last-child > * {
+  margin-right: 50px;
+}
+
+.row:first-child {
+	padding-top: 25px;
+}
+
+.row:last-child {
+	padding-bottom: 25px;
+}
+
+
+
+
+
+
+/* Responsive */
+.c3 {
+  display: block;
+  width: 33%;
+  float: left;
+}
+
+.c2 {
+	display: block;
+	width: 50%;
+	float:left;
+}
+
+
+
+
+
+/* Styles */
+.italic {
+	font-style: italic;
+}
+
+
+
+
+/* Tables */
+table {
+	width: 80%;
+	margin-bottom: 25px;
+}
+
+table th {
+	text-align: left;
+}
+
+
+
+/* Form */
+.contact-form input {
+	width: 200px;
+}
+
+.contact-form textarea {
+	width: 450px;
+	height: 200px;
+}
+		</style>
 	</head>	
 	<body>
 		<div id="container">
 			<div id="header">
 				<a href="index.html"><img class="logo" src="images/header-logo.png" alt="Howell Electric Logo" /></a>
+				<!-- 2.3.1 a) Implement HTML structural elements
+					The nav tag is an HTML5 structural element -->
 				<nav>
 					<ul>
 						<li class="active"><a href="index.html">Home</a></li>
+						<!-- 2.3.1 b) Use of anchor references
+							The services link links to the Services heading on this page -->
 						<li><a href="index.html#services">Our Services</a></li>
 						<li><a href="contact.html">Contact Us</a></li>
 						<li><a href="pastwork.html">Past Work</a></li>
@@ -29,7 +213,8 @@
       <div id="main-body">
 				<div class="row">
 					<div class="column c3">
-						<h1>Tradition</h1>
+						<!-- 2.3.2 a) Inline style -->
+						<h1 style="margin-left: 50px;">Tradition</h1>
 						<p>Howell Electric has been serving the interior of British Columbia and beyond. Founded by Gordon Howell in 1984, Howell Electric benefits from its ‘family’ atmosphere. The electrical trade spans three generations of the Howell family, bringing young and old blood together, combining technical advantages, skills, and precision.</p>
 					</div><!-- columbn c3 -->
 					
@@ -64,13 +249,16 @@
           </address>
         </div>
 
+				<!-- 2.3.1 c) Links to appropriate resources
+					The maps link to an external map that is large and easier to view -->
         <div class="column c2">
           <h1>Find Us</h1>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.125734379655!2d-120.36652999999998!3d50.66192600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537e2c66904ab7d3%3A0x58ab2f1dd74ed1a!2sHowell+Electric+(1984)+Ltd!5e0!3m2!1sen!2sca!4v1416815524670" width="80%" height="225" frameborder="0" style="border:0"></iframe>
         </div><br class="clear-fix" />
 
         <div id="copyright">
-          <p>Copyright 2014 © Howell Electric Ltd</p>
+					<!-- 2.3.1 j) Home page should have last edit date in footer -->
+					<p>Copyright 2014 © Howell Electric Ltd | Last Updated 24/11/14</p>
         </div>
       </div><!-- footer -->
     </div><!-- container -->
