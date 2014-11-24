@@ -147,30 +147,24 @@ h1 {
 	font-style: italic;
 }
 
-/*Tables*/
-table.contactList{
-	border:3 px outset rgba(0,0,0,0.8);
-	border-collapse: collapse;
-	font-family: Arial, Helvetica, sans-serif;
-	width:80%;
+/* Tables */
+table {
+	width: 80%;
+	margin-bottom: 25px;
 }
 
-table.contactList caption{
-	caption-siide:bottom;
-	text align:right;
+table th {
+	text-align: left;
 }
 
-table.contactList th, table.contactList td{
-	border:1 px solid gray;
-	border-collapse: collapse;
+
+
+/* Form */
+.contact-form input {
+	width: 200px;
 }
 
-table.contactList col.firstCol{
-background-color:rgba(225, 225, 198, 0.8);
-}
-
-#map-canvas{
-	height:100%;
-	margin:0;
-	padding: 0;
+.contact-form textarea {
+	width: 450px;
+	height: 200px;
 }
